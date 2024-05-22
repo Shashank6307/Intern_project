@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import Sidebar from "./components/Sidebar/Sidebar";
+import Navbar from "./components/Navbar/Navbar";
+import Hero from "./components/Hero/Hero";
+import Modulecontent from "./components/Hero/Modulecontent";
+import Coursecontent from "./components/Hero/Coursecontent";
+import Sidebar2 from "./components/Sidebar2/Sidebar2";
+const App = () => {
+  const [showCourseContent, setShowCourseContent] = useState(true);
 
-function App() {
+  const handleModuleClick = () => {
+    setShowCourseContent(!showCourseContent);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Navbar />
+      <div className="main-content">
+        <Sidebar />
+        <div className="content">
+          <Hero />
+        </div>
+      </div>
+      <Sidebar2 />
     </div>
   );
-}
+};
 
 export default App;

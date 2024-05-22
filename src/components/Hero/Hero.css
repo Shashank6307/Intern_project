@@ -1,0 +1,261 @@
+.course-content {
+  /* background-color: #fff; */
+  /* padding: 10px; */
+  border-radius: 8px;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-bottom: 20px;
+  width: 78vw;
+  height: 60vh;
+}
+
+.header {
+  display: flex;
+  padding: 20px;
+  border: none;
+  width: 50vw;
+  height: 55vh;
+  background-color: #fff;
+
+  border-radius: 15px;
+}
+.right {
+  border: none;
+  width: 25vw;
+  height: 55vh;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.course-image {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  height: 55vh;
+  background: radial-gradient(
+    circle,
+    rgb(59, 59, 135),
+    #04049a,
+    rgb(19, 18, 18)
+  );
+  border: none;
+  border-radius: 15px;
+  img {
+    width: 20vw;
+    height: 45vh;
+  }
+}
+
+.course-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.course-info h1 {
+  margin: 0;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.course-meta {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #3d3dee;
+  margin-bottom: 10px;
+
+  span {
+    border: none;
+    background-color: rgb(207, 207, 207);
+    width: 3.5cm;
+    height: 28px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+}
+.module-info {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+
+  .info-1 {
+    /* height: 40%; */
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    align-items: center;
+    span {
+      margin-left: 20px;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 700;
+      color: gray;
+    }
+    img {
+      width: 23px;
+      height: 23px;
+    }
+  }
+}
+.progress-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.progress-label {
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.progress-bar {
+  position: relative;
+  width: 80%;
+  background-color: #e0e0e0;
+  border: 2px solid #b379e6; /* Border color similar to the progress color */
+  border-radius: 10px;
+  overflow: hidden;
+  height: 8px;
+}
+
+.progress {
+  width: 66%;
+  background-color: #854fd1; /* Purple color */
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+}
+.resume-learning {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 13vw;
+  height: 7vh;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.view-insights {
+  background-color: #f0f0f0;
+  border: 3px solid #854fd1;
+  border-radius: 4px;
+  padding: 10px 20px;
+  background: transparent;
+  width: 12vw;
+  height: 7vh;
+  font-size: 16px;
+  font-weight: 600;
+  color: #854fd1;
+}
+
+.resume-learning {
+  background-color: #854fd1;
+  color: white;
+}
+
+#modules .module {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+}
+.module-details {
+  width: 50vw;
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+
+  align-items: center;
+
+  img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .module-meta {
+      display: flex;
+      justify-content: start;
+      gap: 15px;
+      font-size: 18px;
+      color: gray;
+      font-weight: 700;
+    }
+  }
+}
+.module h2 {
+  margin: 0;
+  font-size: 16px;
+  /* margin-bottom: 8px; */
+  color: #854fd1;
+}
+
+.module h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.grade-progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 25vw;
+  /* border: 2px solid black; */
+  .grade {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+  }
+
+  .progress_bAR {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: start;
+    /* border: 2px solid black; */
+  }
+}
+
+#buttondown {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.dropdown {
+  width: 25px;
+  height: 25px;
+}
